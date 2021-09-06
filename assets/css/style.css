@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+#icon img{
+    height: 10vh;
+}
+#forecast{
+    display:flex
+}
+
+.widget{
+    text-align: center;
+    width: 40%;
+    max-width: 300px;
+}
+#myVideo {
+    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+    z-index: -1;
+    opacity: 0.6;
+  }
+.container{
+    padding: 20px 70px;
+}
+.widget{
+    border-radius: 10px;
+    padding: 2em;
+    
+}
+
+#cityName{
+    font-size: 20px;
+}
+#temperature{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0.5em;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.date-container{
+    font-weight: 100;
+}
+.date-container .time{
+    font-size: 40px;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+.place-container{
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+.current-info{
+    display: flex;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+#current-weather-items{
+    color: white;
+    max-width: 300px;
+    opacity: 0;
+}
